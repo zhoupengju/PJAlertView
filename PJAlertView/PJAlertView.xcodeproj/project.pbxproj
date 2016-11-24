@@ -151,16 +151,8 @@
 		138AAA2D1DE6DFBA00E6A69C /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				138AAA2E1DE6DFBA00E6A69C /* Vender(第三方) */,
 			);
 			path = Others;
-			sourceTree = "<group>";
-		};
-		138AAA2E1DE6DFBA00E6A69C /* Vender(第三方) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Vender(第三方)";
 			sourceTree = "<group>";
 		};
 		CB5F7E7D1DE2EE66001A2364 = {
