@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  PJAlertView.h
 //  PJAlertView
 //
-//  Created by 周鹏钜 on 16/11/21.
+//  Created by hetane on 16/11/24.
 //  Copyright © 2016年 周鹏钜. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PJAlertView : UIView
 
 @end
-
