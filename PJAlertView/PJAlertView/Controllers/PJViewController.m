@@ -6,8 +6,6 @@
 //  Copyright © 2016年 周鹏钜. All rights reserved.
 //
 
-#import "PJAlertView.h"
-#import "MBProgressHUD.h"
 #import "PJViewController.h"
 
 
@@ -38,12 +36,31 @@
     
     btn.backgroundColor = [UIColor orangeColor];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    NSLog(@"%@", [NSThread currentThread]);
+    
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        
+        NSLog(@"11%@", [NSThread currentThread]);
+    }];
 }
 
 - (void)btnClick {
     
     NSLog(@"********************************");
 
+//    PJAlertView *alertView = [[PJAlertView alloc] init];
+//    
+//    [alertView show];
+    
+    [SVProgressHUD show];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [SVProgressHUD dismiss];
+    });
+    
     
 }
 

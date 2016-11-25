@@ -10,4 +10,11 @@
 
 @interface PJAlertView : UIView
 
+@property (nonatomic, strong) NSArray *buttonTitles;
+
+
+- (void)show;
+
+- (void)close;
+
 @end
